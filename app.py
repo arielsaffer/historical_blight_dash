@@ -27,6 +27,7 @@ if "Feedback" not in location_corpus.columns:
 
 # Initialize the Dash app
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
+server = app.server
 
 app.title = "Late blight 1844-1847 text"
 
