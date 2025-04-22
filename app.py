@@ -116,7 +116,7 @@ def render_content(tab):
                 dcc.Dropdown(
                     id="article-dropdown",
                     options=[
-                        {"label": f"{idx + 1}. {pd.to_datetime(data_dict[idx]['Clean Date']).strftime('%Y-%m-%d')} - {data_dict[idx]['Title']}", "value": idx}
+                        {"label": f"{idx + 1}. {data_dict[idx]['Clean Date']} - {data_dict[idx]['Title']}", "value": idx}
                         for idx in data_dict.keys()
                     ],
                     placeholder="Select an article",
